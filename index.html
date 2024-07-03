@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Typer Game - Bautista Rodríguez Carbajales</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <div class="container roboto-slab">
+    <div class="hidden"></div>
+    <div class="main">
+    
+      <h2>⌨️ TYPER 3000 ⌨️</h2>
+
+      <div class="sample">
+        <p>Escribí la siguiente palabra:</p>
+        <h1 id="randomWord"></h1>
+      </div>
+      
+      <input type="text" id="text" autocomplete="off" placeholder="" />
+      <div class="sample">
+        <p class="time-container">Tiempo restante: <span id="timeSpan">10s</span></p>
+        <p class="score-container">Score: <span id="score">0</span></p>
+      </div>
+    </div>
+
+    <div id="end-game-container" class="end-game-container">Game Over!</div>
+  </div>
+  <script src="script.js"></script>
+</body>

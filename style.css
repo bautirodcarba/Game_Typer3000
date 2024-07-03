@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.roboto-slab {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}  
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: url("bin/retrobg.jfif");
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+
+.hidden{
+    z-index: 100;
+    opacity: 45%;
+    background-color: black;
+    position: absolute;
+    width: 35vw;
+    height: 50vh;
+    border-radius: 2%;
+}
+
+.main{
+    color: white;
+    z-index: 200;
+    border-radius: 2%;
+    height: 50vh;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 100%;
+}
+
+#end-game-container{
+    display: none;
+    transform: rotate(15deg);
+    border-radius: 2%;
+    z-index: 300;
+    text-align: center;
+    font-size: 9vh;
+    line-height: 10vh;
+    position: absolute;
+    background-color: black;
+    border: 1px solid darkorchid;
+    color: white;
+    height: 10vh;
+    width: 30vw;
+}
+
+h2{ 
+    font-size: 4vh;
+}
+
+p{
+    font-size: 3vh;
+    text-align: center;
+}
+
+#randomWord{
+    text-align: center;
+    font-size: 4vh; 
+}
+
+#text{ 
+    font-size: 3vh;
+    text-align: center;
+    border: 1px solid darkorchid;
+    border-radius: 2%;
+}
