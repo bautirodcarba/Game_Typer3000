@@ -18,7 +18,7 @@
     justify-content: center;
     background: url("bin/retrobg.jfif");
     background-size: contain;
-    background-repeat: repeat-x;
+    background-repeat: repeat;
 }
 
 .hidden{
@@ -64,7 +64,7 @@ h2{
     font-size: 4vh;
 }
 
-p{
+p{ 
     font-size: 3vh;
     text-align: center;
 }
@@ -79,4 +79,45 @@ p{
     text-align: center;
     border: 1px solid darkorchid;
     border-radius: 2%;
+}
+
+
+@media(max-width:1610px){
+    h2{font-size: 3vh;}
+    p{font-size: 2vh;}
+    #end-game-container{
+        border-radius: 0%;
+        line-height: 4vh;
+        font-size: 4vh;
+        height: 4vh;
+        width: 30vh;
+    };
+}
+@media(max-width:1100px){
+    h2{font-size: 3vh;}
+    p{font-size: 2vh;}
+    #end-game-container{
+        border-radius: 0%;
+        line-height: 5vh;
+        font-size: 5vh;
+        height: 5vh;
+        width: 30vh;
+    };
+}
+
+@media(max-width:700px){
+    *{border:1px solid red;}
+    h2{
+        font-size: 3vh;
+    }
+    #randomWord{
+        font-size: 3vh;
+    }
+    p{
+        font-size: 2vh;
+    }
+    .hidden{
+        width: 100%;
+    }
+    
 }
